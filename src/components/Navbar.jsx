@@ -35,41 +35,27 @@ function Navbar() {
       {/* Menu de navigation */}
       <nav
         className={`absolute top-full left-0 w-full bg-blue-900 transition-all duration-300 ${
-          isOpen
-            ? "max-h-screen opacity-100 visible"
-            : "max-h-0 opacity-0 invisible"
+          isOpen ? "max-h-screen opacity-100 visible" : "max-h-0 opacity-0 invisible"
         }`}
       >
         <ul className="flex flex-col items-center gap-2 pb-2">
           <li>
-            <a
-              href="#about"
-              className="text-xs font-semibold hover:text-blue-300"
-            >
-              [Pésentation]
+            <a href="#about" className="text-sm font-semibold hover:text-blue-300">
+              [À propos]
             </a>
           </li>
           <li>
-            <a
-              href="#skills"
-              className="text-xs font-semibold hover:text-blue-300"
-            >
+            <a href="#skills" className="text-sm font-semibold hover:text-blue-300">
               [Compétences]
             </a>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="text-xs font-semibold hover:text-blue-300"
-            >
+            <a href="#projects" className="text-sm font-semibold hover:text-blue-300">
               [Projets]
             </a>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="text-xs font-semibold hover:text-blue-300"
-            >
+            <a href="#contact" className="text-sm font-semibold hover:text-blue-300">
               [Contact]
             </a>
           </li>
