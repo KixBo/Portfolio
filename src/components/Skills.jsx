@@ -2,8 +2,9 @@ import { SiReact, SiTailwindcss, SiExpress, SiMongodb, SiGit, SiGithub } from "r
 import { FaNodeJs } from "react-icons/fa";
 
 function Skills() {
-
-  {/* Tableau des compétences */}
+  {
+    /* Tableau des compétences */
+  }
   const skills = [
     { name: "React", icon: <SiReact className="text-blue-500 w-12 h-12" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400 w-12 h-12" /> },
@@ -16,18 +17,18 @@ function Skills() {
 
   return (
     <section id="skills" className="my-8 px-4 w-full">
-        {/* Titre */}
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Compétences</h2>
+      {/* Titre */}
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Compétences</h2>
 
-        {/* Compétences */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {skills.map((skill) => (
-            <div key={skill.name} className="flex flex-col items-center space-y-2">
-              {skill.icon}
-              <span className="text-lg font-semibold text-gray-700">{skill.name}</span>
-            </div>
-          ))}
-        </div>
+      {/* Compétences */}
+      <div className="flex flex-wrap justify-center gap-6">
+        {skills.map((skill) => (
+          <div key={skill.name} className="flex flex-col items-center space-y-2">
+            {skill.icon}
+            <span className="text-lg font-semibold text-gray-700">{skill.name}</span>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
