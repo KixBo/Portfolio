@@ -1,7 +1,6 @@
 function About() {
   return (
-    <section id="about" className="my-8 px-4">
-      <div className="w-full flex flex-col items-center text-center">
+    <section id="about" className="my-8 px-6 w-full flex flex-col items-center text-center">
         {/* Titre */}
         <h2 className="text-3xl font-bold text-gray-900 mb-5">À propos de moi</h2>
 
@@ -20,7 +19,6 @@ function About() {
           techniques. Mon objectif est de concevoir des solutions innovantes et performantes tout en
           continuant à évoluer dans cet univers passionnant.
         </p>
-      </div>
     </section>
   );
 }

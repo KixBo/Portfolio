@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <div className="text-center bg-gray-900 text-white h-500 flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold">Bienvenue dans mon portfolio !</h1>
       </div>
