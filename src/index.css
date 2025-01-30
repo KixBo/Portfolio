@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+.custom-slider .slick-prev,
+.custom-slider .slick-next {
+  @apply absolute top-1/2 z-10 w-8 h-8;
+}
+
+.custom-slider .slick-prev {
+  @apply left-0;
+}
+
+.custom-slider .slick-next {
+  @apply right-0;
+}
+
+.custom-slider .slick-prev:before,
+.custom-slider .slick-next:before {
+  @apply text-black text-2xl;
+}
+
+.custom-slider .slick-dots {
+  @apply bottom-1; /* Remonte les dots de 20px */
+}
+
+.custom-slider .slick-dots li {
+  @apply mx-0; /* Espacement entre les dots */
+}
+
+.custom-slider .slick-dots li button:before {
+  @apply text-black/70; /* Change la couleur et la taille des dots */
+}
+
+.custom-slider .slick-dots li.slick-active button:before {
+  @apply text-black; /* Change la couleur du dot actif */
+}
