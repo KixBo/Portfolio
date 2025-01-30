@@ -4,9 +4,9 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-blue-900 text-white w-full z-50 fixed top-0 flex justify-between items-center p-3">
+    <header className="bg-blue-900/90 text-white w-full z-50 fixed top-0 flex justify-between items-center p-3">
       {/* Logo cliquable */}
-      <a href="/" className="text-2xl font-bold hover:text-blue-300">
+      <a href="/" className="font-exo text-2xl font-bold hover:text-blue-300">
         [KB]
       </a>
 
@@ -34,7 +34,7 @@ function Navbar() {
 
       {/* Menu de navigation */}
       <nav
-        className={`absolute top-full left-0 w-full bg-blue-900 transition-all duration-300 ${
+        className={`absolute top-full left-0 w-full bg-blue-900/90 transition-all duration-300 ${
           isOpen ? "max-h-screen opacity-100 visible" : "max-h-0 opacity-0 invisible"
         }`}
       >

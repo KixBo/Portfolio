@@ -1,8 +1,8 @@
 function About() {
   return (
-    <section id="about" className="my-8 px-6 w-full flex flex-col items-center text-center">
+    <section id="about" className="bg-blue-900 py-8 px-6 w-full flex flex-col items-center text-center">
         {/* Titre */}
-        <h2 className="text-3xl font-bold text-gray-900 mb-5">À propos de moi</h2>
+        <h2 className="font-exo text-3xl font-bold text-gray-100 mb-5">À propos de moi</h2>
 
         {/* Image de profil */}
         <img
@@ -12,7 +12,7 @@ function About() {
         />
 
         {/* Texte de présentation */}
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-gray-100">
           Passionné par les technologies numériques, j’ai récemment suivi une formation de
           développeur web sur OpenClassrooms. Toujours curieux et en quête d’apprentissage, je
           cherche continuellement à acquérir de nouvelles compétences et à relever des défis

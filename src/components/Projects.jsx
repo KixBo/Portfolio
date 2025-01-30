@@ -69,9 +69,9 @@ function Projects() {
   }
 
   return (
-    <section id="projects" className="my-8 px-6 w-full">
+    <section id="projects" className="bg-blue-900 py-8 px-6 w-full">
       {/* Titre */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Projets</h2>
+      <h2 className="font-exo text-3xl font-bold text-gray-100 mb-8 text-center">Projets</h2>
       <div className="flex flex-col gap-y-6">
         {/* Projets */}
         {projects.map((project) => (
@@ -83,15 +83,15 @@ function Projects() {
           >
             {/* Titre et description du projet */}
             <div className="z-10">
-              <h3 className="text-white text-lg font-semibold mb-4">{project.title}</h3>
-              <p className="text-white text-sm font-semibold w-70">{project.description}</p>
+              <h3 className="text-gray-100 text-lg font-semibold mb-4">{project.title}</h3>
+              <p className="text-gray-100 text-sm font-semibold w-70">{project.description}</p>
             </div>
             {/* Tags technologies */}
             <div className="z-10 self-end flex gap-x-2">
               {project.technologies.map((technologie) => (
                 <div
                   key={technologie}
-                  className="bg-blue-800 w-20 text-white text-center text-sm font-semibold rounded-xl"
+                  className="bg-blue-900 w-20 text-gray-100 text-center text-sm font-semibold rounded-xl"
                 >
                   {technologie}
                 </div>
@@ -132,7 +132,7 @@ function Projects() {
             {selectedProject?.technologies.map((technologie) => (
               <div
                 key={technologie}
-                className="bg-blue-800 w-20 text-white text-center text-sm font-semibold rounded-xl"
+                className="bg-blue-900 w-20 text-white text-center text-sm font-semibold rounded-xl"
               >
                 {technologie}
               </div>

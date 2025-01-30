@@ -19,17 +19,26 @@
 }
 
 .custom-slider .slick-dots {
-  @apply bottom-1; /* Remonte les dots de 20px */
+  @apply bottom-1;
 }
 
 .custom-slider .slick-dots li {
-  @apply mx-0; /* Espacement entre les dots */
+  @apply mx-0;
 }
 
 .custom-slider .slick-dots li button:before {
-  @apply text-black/70; /* Change la couleur et la taille des dots */
+  @apply text-black/70;
 }
 
 .custom-slider .slick-dots li.slick-active button:before {
-  @apply text-black; /* Change la couleur du dot actif */
+  @apply text-black;
 }
+
+body {
+  @apply font-[Outfit]
+}
+
+.font-exo {
+  @apply font-[Exo2];
+}
+

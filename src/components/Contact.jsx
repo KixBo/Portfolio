@@ -3,13 +3,9 @@ import { useForm, ValidationError } from "@formspree/react";
 function Contact() {
   const [state, handleSubmit] = useForm("xanqjyrd");
 
-  // if (state.succeeded) {
-  //   return <p>Thanks for joining!</p>;
-  // }
-
   return (
-    <section id="contact" className="my-8 px-4 text-center">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Me contacter</h2>
+    <section id="contact" className="py-8 px-6 text-center">
+      <h2 className="font-exo text-3xl font-bold text-gray-900 mb-4">Me contacter</h2>
       <p className="text-lg text-gray-700 mb-6">
         Envoyez-moi un message directement ici ou sur killian.boyer@hotmail.fr.
       </p>
@@ -50,7 +46,7 @@ function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md"
+            className="bg-blue-900 hover:bg-blue-700 text-gray-100 font-semibold px-6 py-2 rounded-md"
           >
             {state.submitting ? "Envoi en cours..." : "Envoyer"}
           </button>
