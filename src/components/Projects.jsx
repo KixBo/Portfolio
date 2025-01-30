@@ -71,7 +71,7 @@ function Projects() {
   return (
     <section id="projects" className="my-8 px-6 w-full">
       {/* Titre */}
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Mes projets</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Projets</h2>
       <div className="flex flex-col gap-y-6">
         {/* Projets */}
         {projects.map((project) => (
