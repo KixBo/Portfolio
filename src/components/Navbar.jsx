@@ -4,7 +4,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-blue-900 text-white w-full z-50 fixed top-0 max-w-[1440px] flex justify-between items-center p-3">
+    <header className="bg-blue-900 text-white w-full z-50 fixed top-0 flex justify-between items-center p-3">
       {/* Logo cliquable */}
       <a href="/" className="text-2xl font-bold hover:text-blue-300">
         [KB]

@@ -3,20 +3,19 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact"
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-w-[320px] max-w-[1440px] mx-auto">
+    <div className="min-w-[320px] mx-auto">
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Contact />
-      <div className="text-center bg-gray-900 text-white h-500 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Bienvenue dans mon portfolio !</h1>
-      </div>
+      <Footer />
     </div>
   );
 }
