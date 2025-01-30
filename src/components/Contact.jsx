@@ -4,7 +4,7 @@ function Contact() {
   const [state, handleSubmit] = useForm("xanqjyrd");
 
   return (
-    <section id="contact" className="py-8 px-6 text-center">
+    <section id="contact" className="py-8 px-6 text-center lg:px-80 lg:py-12">
       <h2 className="font-exo text-3xl font-bold text-gray-900 mb-4">Me contacter</h2>
       <p className="text-lg text-gray-700 mb-6">
         Envoyez-moi un message directement ici ou sur killian.boyer@hotmail.fr.

@@ -69,7 +69,7 @@ function Projects() {
   }
 
   return (
-    <section id="projects" className="bg-blue-900 py-8 px-6 w-full">
+    <section id="projects" className="bg-blue-900 py-8 px-6 w-full lg:px-80 lg:py-12">
       {/* Titre */}
       <h2 className="font-exo text-3xl font-bold text-gray-100 mb-8 text-center">Projets</h2>
       <div className="flex flex-col gap-y-6">
@@ -107,11 +107,11 @@ function Projects() {
         onClose={closeModal}
         className="fixed inset-0 z-50 flex items-center p-6 justify-center bg-black/85"
       >
-        <Dialog.Panel className="bg-gray-300 w-full p-6 rounded-lg max-h-[90vh] overflow-y-auto">
+        <Dialog.Panel className="bg-gray-300 w-full p-6 rounded-lg max-h-[90vh] overflow-y-auto lg:w-200">
           {/* Titre & Bouton de fermeture */}
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-2xl font-bold">{selectedProject?.title}</h2>
-            <button onClick={closeModal} className="text-gray-900 text-2xl">
+            <h2 className="text-2xl font-bold lg:text-3xl">{selectedProject?.title}</h2>
+            <button onClick={closeModal} className="text-gray-900 text-2xl lg:text-3xl">
               <IoIosCloseCircleOutline />
             </button>
           </div>
@@ -142,15 +142,15 @@ function Projects() {
           <a
             href={selectedProject?.github}
             target="_blank"
-            className="bg-gray-800 hover:bg-gray-900 text-white text-sm px-3 py-1 rounded-md font-semibold inline-block mt-4"
+            className="bg-gray-800 hover:bg-gray-900 text-white text-sm lg:text-lg px-3 py-1 rounded-md font-semibold inline-block mt-4"
           >
             Voir le Github
           </a>
           {/* Description */}
-          <h4 className="text-xl font-bold mt-3 mb-2">Contexte</h4>
-          <p className="text-sm">{selectedProject?.overview}</p>
-          <h4 className="text-xl font-bold mt-3 mb-2">Travail réalisé</h4>
-          <p className="text-sm">{selectedProject?.achievement}</p>
+          <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Contexte</h4>
+          <p className="text-sm lg:text-base">{selectedProject?.overview}</p>
+          <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Travail réalisé</h4>
+          <p className="text-sm lg:text-base">{selectedProject?.achievement}</p>
         </Dialog.Panel>
       </Dialog>
     </section>

@@ -16,9 +16,9 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-8 px-6 w-full">
+    <section id="skills" className="py-8 px-6 w-full lg:py-12">
       {/* Titre */}
-      <h2 className="font-exo text-3xl font-bold text-gray-900 mb-8 text-center">Compétences</h2>
+      <h2 className="font-exo text-3xl font-bold text-gray-900 mb-8 text-center lg:mb-12">Compétences</h2>
 
       {/* Compétences */}
       <div className="flex flex-wrap justify-center gap-6">

@@ -1,14 +1,14 @@
 function About() {
   return (
-    <section id="about" className="bg-blue-900 py-8 px-6 w-full flex flex-col items-center text-center">
+    <section id="about" className="bg-blue-900 py-8 px-6 w-full flex flex-col items-center text-center lg:px-80 lg:py-12">
         {/* Titre */}
-        <h2 className="font-exo text-3xl font-bold text-gray-100 mb-5">À propos de moi</h2>
+        <h2 className="font-exo text-3xl font-bold text-gray-100 mb-5 lg:mb-9">À propos de moi</h2>
 
         {/* Image de profil */}
         <img
           src="/photo_id.jpg"
           alt="Photo de profil"
-          className="w-32 h-32 rounded-full shadow-lg mb-5 object-cover grayscale"
+          className="w-32 h-32 rounded-full shadow-lg mb-5 object-cover grayscale lg:mb-9 lg:w-38 lg:h-38"
         />
 
         {/* Texte de présentation */}

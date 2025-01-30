@@ -15,7 +15,7 @@
 
 .custom-slider .slick-prev:before,
 .custom-slider .slick-next:before {
-  @apply text-black text-2xl;
+  @apply text-black text-2xl lg:text-3xl;
 }
 
 .custom-slider .slick-dots {
@@ -23,11 +23,11 @@
 }
 
 .custom-slider .slick-dots li {
-  @apply mx-0;
+  @apply mx-0 lg:mx-2;
 }
 
 .custom-slider .slick-dots li button:before {
-  @apply text-black/70;
+  @apply text-black/70 lg:text-xs;
 }
 
 .custom-slider .slick-dots li.slick-active button:before {
