@@ -14,7 +14,7 @@ function Contact() {
       {state.succeeded ? (
         <p className="text-green-600 font-semibold">Merci ! Votre message a bien été envoyé.</p>
       ) : (
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <form role="form" onSubmit={handleSubmit} className="flex flex-col gap-4">
           {/* Champ Email */}
           <label htmlFor="email" className="text-left font-semibold">
             Email

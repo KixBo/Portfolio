@@ -11,7 +11,7 @@ function Navbar() {
       </a>
 
       {/* Menu de navigation sur grand écran */}
-      <nav className="hidden lg:flex flex-grow justify-center pr-18">
+      <nav role="navigation" className="hidden lg:flex flex-grow justify-center pr-18">
         <ul className="flex gap-6">
           <li>
             <a href="#about" className="text-sm font-semibold hover:text-blue-300">

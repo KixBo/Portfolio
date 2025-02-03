@@ -3,6 +3,7 @@ function Hero() {
     <section className="relative h-screen flex flex-col items-center justify-center bg-black/80">
       {/* Vidéo en arrière-plan */}
       <video
+        aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover -z-10 "
         src="/background.mp4"
         autoPlay
