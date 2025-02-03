@@ -1,9 +1,6 @@
-import { Dialog } from "@headlessui/react";
 import { useState } from "react";
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
 
 {
   /* Tableau des projets */
@@ -42,18 +39,6 @@ const projects = [
   },
 ];
 
-{
-  /* Paramètres du carrousel */
-}
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-};
-
 function Projects() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -75,84 +60,11 @@ function Projects() {
       <div className="flex flex-col gap-y-6">
         {/* Projets */}
         {projects.map((project) => (
-          <div
-            key={project.title}
-            className="relative h-48 rounded-lg cursor-pointer shadow-lg hover:scale-105 px-4 py-4 flex flex-col justify-between bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/50 before:rounded-lg"
-            style={{ backgroundImage: `url(${project.image})` }}
-            onClick={() => openModal(project)}
-          >
-            {/* Titre et description du projet */}
-            <div className="z-10">
-              <h3 className="text-gray-100 text-lg font-semibold mb-4">{project.title}</h3>
-              <p className="text-gray-100 text-sm font-semibold w-70">{project.description}</p>
-            </div>
-            {/* Tags technologies */}
-            <div className="z-10 self-end flex gap-x-2">
-              {project.technologies.map((technologie) => (
-                <div
-                  key={technologie}
-                  className="bg-blue-900 w-20 text-gray-100 text-center text-sm font-semibold rounded-xl"
-                >
-                  {technologie}
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProjectCard key={project.title} project={project} openModal={openModal} />
         ))}
       </div>
-
       {/* Modale du projet */}
-      <Dialog
-        open={isOpen}
-        onClose={closeModal}
-        className="fixed inset-0 z-50 flex items-center p-6 justify-center bg-black/85"
-      >
-        <Dialog.Panel className="bg-gray-300 w-full p-6 rounded-lg max-h-[90vh] overflow-y-auto lg:w-200">
-          {/* Titre & Bouton de fermeture */}
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-2xl font-bold lg:text-3xl">{selectedProject?.title}</h2>
-            <button onClick={closeModal} className="text-gray-900 text-2xl lg:text-3xl">
-              <IoIosCloseCircleOutline />
-            </button>
-          </div>
-          {/* Carousel d'images */}
-          {selectedProject?.images?.length > 0 && (
-            <div className="relative custom-slider mb-4">
-              <Slider {...settings}>
-                {selectedProject.images.map((image) => (
-                  <div key={image}>
-                    <img src={image} alt="Image du projet" className="w-full rounded-lg" />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          )}
-          {/* Tags technologies */}
-          <div className="z-10 self-end flex gap-x-2">
-            {selectedProject?.technologies.map((technologie) => (
-              <div
-                key={technologie}
-                className="bg-blue-900 w-20 text-white text-center text-sm font-semibold rounded-xl"
-              >
-                {technologie}
-              </div>
-            ))}
-          </div>
-          {/* Lien vers le projet */}
-          <a
-            href={selectedProject?.github}
-            target="_blank"
-            className="bg-gray-800 hover:bg-gray-900 text-white text-sm lg:text-lg px-3 py-1 rounded-md font-semibold inline-block mt-4"
-          >
-            Voir le Github
-          </a>
-          {/* Description */}
-          <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Contexte</h4>
-          <p className="text-sm lg:text-base">{selectedProject?.overview}</p>
-          <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Travail réalisé</h4>
-          <p className="text-sm lg:text-base">{selectedProject?.achievement}</p>
-        </Dialog.Panel>
-      </Dialog>
+      <ProjectModal isOpen={isOpen} closeModal={closeModal} selectedProject={selectedProject} />
     </section>
   );
 }
