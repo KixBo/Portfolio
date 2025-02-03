@@ -11,10 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 const projects = [
   {
     title: "Kasa",
-    image: "/kasa_background.png",
+    image: "/kasa_background.webp",
     github: "https://github.com/KixBo/Kasa",
     technologies: ["React", "Sass"],
-    images: ["/kasa_screen1.png", "/kasa_screen2.png", "/kasa_screen3.png"],
+    images: ["/kasa_screen1.webp", "/kasa_screen2.webp", "/kasa_screen3.webp"],
     description: "Création d'une application web de location immobilière avec React",
     overview:
       "Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France. Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. La CTO a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec React côté front-end.",
@@ -23,16 +23,16 @@ const projects = [
   },
   {
     title: "Mon Vieux Grimoire",
-    image: "/grimoire_background.png",
+    image: "/grimoire_background.webp",
     github: "https://github.com/KixBo/Mon-Vieux-Grimoire",
     technologies: ["Node.js", "Express.js", "MongoDB"],
     images: [
-      "/grimoire_screen1.png",
-      "/grimoire_screen2.png",
-      "/grimoire_screen3.png",
-      "/grimoire_screen4.png",
-      "/grimoire_screen5.png",
-      "/grimoire_screen6.png",
+      "/grimoire_screen1.webp",
+      "/grimoire_screen2.webp",
+      "/grimoire_screen3.webp",
+      "/grimoire_screen4.webp",
+      "/grimoire_screen5.webp",
+      "/grimoire_screen6.webp",
     ],
     description: "Développement du back-end d'un site de notation de livres",
     overview:
