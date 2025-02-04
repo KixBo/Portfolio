@@ -20,7 +20,7 @@ function ProjectCarousel({ images }) {
       <Slider {...settings}>
         {images.map((image) => (
           <div key={image}>
-            <img src={image} alt="Image du projet" className="w-full rounded-lg" />
+            <img src={image} alt="Image du projet" className="w-full rounded-lg" loading="lazy" />
           </div>
         ))}
       </Slider>

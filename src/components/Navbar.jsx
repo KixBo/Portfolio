@@ -3,6 +3,10 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  function handleLinkClick() {
+    setIsOpen(false);
+  }
+
   return (
     <header className="bg-blue-900/90 text-white w-full z-50 fixed top-0 flex items-center p-3 justify-between">
       {/* Logo cliquable */}
@@ -66,22 +70,22 @@ function Navbar() {
       >
         <ul className="flex flex-col items-center gap-2 pb-2">
           <li>
-            <a href="#about" className="text-sm font-semibold hover:text-blue-300">
+            <a href="#about" className="text-sm font-semibold hover:text-blue-300" onClick={handleLinkClick}>
               [À propos]
             </a>
           </li>
           <li>
-            <a href="#skills" className="text-sm font-semibold hover:text-blue-300">
+            <a href="#skills" className="text-sm font-semibold hover:text-blue-300" onClick={handleLinkClick}>
               [Compétences]
             </a>
           </li>
           <li>
-            <a href="#projects" className="text-sm font-semibold hover:text-blue-300">
+            <a href="#projects" className="text-sm font-semibold hover:text-blue-300" onClick={handleLinkClick}>
               [Projets]
             </a>
           </li>
           <li>
-            <a href="#contact" className="text-sm font-semibold hover:text-blue-300">
+            <a href="#contact" className="text-sm font-semibold hover:text-blue-300" onClick={handleLinkClick}>
               [Contact]
             </a>
           </li>
