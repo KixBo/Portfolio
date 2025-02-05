@@ -12,7 +12,7 @@ function ProjectModal({ isOpen, closeModal, selectedProject }) {
       <Dialog.Panel className="bg-gray-300 w-full p-6 rounded-lg max-h-[90vh] overflow-y-auto lg:w-200">
         {/* Titre & Bouton de fermeture */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold lg:text-3xl">{selectedProject?.title}</h2>
+          <h2 className="font-exo text-2xl font-bold lg:text-3xl">{selectedProject?.title}</h2>
           <button onClick={closeModal} className="text-gray-900 text-2xl lg:text-3xl">
             <IoIosCloseCircleOutline />
           </button>
@@ -24,7 +24,7 @@ function ProjectModal({ isOpen, closeModal, selectedProject }) {
           {selectedProject?.technologies.map((technologie) => (
             <div
               key={technologie}
-              className="bg-blue-900 w-20 text-white text-center text-sm font-semibold rounded-xl"
+              className="bg-blue-900 w-20 text-white text-center text-sm font-semibold rounded-xl shadow-lg"
             >
               {technologie}
             </div>
@@ -34,14 +34,14 @@ function ProjectModal({ isOpen, closeModal, selectedProject }) {
         <a
           href={selectedProject?.github}
           target="_blank"
-          className="bg-gray-800 hover:bg-gray-900 text-white text-sm lg:text-lg px-3 py-1 rounded-md font-semibold inline-block mt-4"
+          className="bg-gray-800 hover:bg-gray-900 text-white text-sm lg:text-lg px-3 py-1 rounded-md font-semibold inline-block mt-4 shadow-lg"
         >
           Voir le Github
         </a>
         {/* Description */}
-        <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Contexte</h4>
+        <h4 className="font-exo text-xl font-bold mt-3 mb-2 lg:text-2xl">Contexte</h4>
         <p className="text-sm lg:text-base">{selectedProject?.overview}</p>
-        <h4 className="text-xl font-bold mt-3 mb-2 lg:text-2xl">Travail réalisé</h4>
+        <h4 className="font-exo text-xl font-bold mt-3 mb-2 lg:text-2xl">Travail réalisé</h4>
         <p className="text-sm lg:text-base">{selectedProject?.achievement}</p>
       </Dialog.Panel>
     </Dialog>

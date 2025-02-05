@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center bg-black/80">
+    <section id="hero" className="relative h-screen flex flex-col items-center justify-center bg-black/80">
       {/* Vidéo en arrière-plan */}
       <video
         aria-hidden="true"

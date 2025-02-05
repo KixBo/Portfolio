@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <header className="bg-blue-900/90 text-white w-full z-50 fixed top-0 flex items-center p-3 justify-between">
       {/* Logo cliquable */}
-      <a href="/" className="font-exo text-2xl font-bold hover:text-blue-300 lg:ml-6">
+      <a href="#hero" className="font-exo text-2xl font-bold hover:text-blue-300 lg:ml-6">
         [KB]
       </a>
 

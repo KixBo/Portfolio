@@ -46,7 +46,7 @@ function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="bg-blue-900 hover:bg-gray-900 text-gray-100 font-semibold px-6 py-2 rounded-md"
+            className="bg-blue-900 hover:bg-gray-900 text-gray-100 font-semibold px-6 py-2 rounded-md shadow-lg"
           >
             {state.submitting ? "Envoi en cours..." : "Envoyer"}
           </button>

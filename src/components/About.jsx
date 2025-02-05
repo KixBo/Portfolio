@@ -12,7 +12,7 @@ function About() {
         />
 
         {/* Texte de présentation */}
-        <p className="text-lg text-gray-100">
+        <p className="text-lg text-gray-100 text-justify">
           Passionné par les technologies numériques, j’ai récemment suivi une formation de
           développeur web sur OpenClassrooms. Toujours curieux et en quête d’apprentissage, je
           cherche continuellement à acquérir de nouvelles compétences et à relever des défis

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Style des éléments du carrousel */
 .custom-slider .slick-prev,
 .custom-slider .slick-next {
   @apply absolute top-1/2 z-10 w-8 h-8;
@@ -34,11 +35,21 @@
   @apply text-black;
 }
 
+/* Fonts */
 body {
-  @apply font-[Outfit]
+  @apply font-[Outfit];
 }
 
 .font-exo {
   @apply font-[Exo2];
 }
 
+/* Rendre la scrollbar fine et visible */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
