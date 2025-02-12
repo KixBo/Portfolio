@@ -25,5 +25,33 @@
     "description": "Développement du back-end d'un site de notation de livres",
     "overview": "Le Vieux Grimoire est une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres. Le site s’appellera “Mon Vieux Grimoire”, et permettra aux membres d’ajouter un nouveau livre et de mettre une note visible par le public.",
     "achievement": "J'ai été amené à créer une API en suivant un document de spécifications techniques tout en prenant en compte la taille des images pour que le projet soit conforme aux bonnes pratiques de Green Code. J'ai aussi dû stocker des données de manière sécurisée, mettre en oeuvre des opérations CRUD de manière sécurisée et implémenter un modèle de logique de données conformément à la réglementation."
+  },
+  {
+    "title": "Booki",
+    "image": "/booki_background.webp",
+    "github": "https://github.com/KixBo/Booki",
+    "technologies": ["HTML", "CSS"],
+    "images": [
+      "/booki_screen1.webp",
+      "/booki_screen2.webp"
+    ],
+    "description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "overview": "L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. L'objectif était d'intégrer une interface utilisateur responsive en suivant les maquettes réalisées par l’UI designer et en respectant les spécifications techniques fournies par la CTO.",
+    "achievement": "J'ai été chargé d'intégrer l’interface du site en utilisant HTML et CSS, en respectant les bonnes pratiques de structuration du code et d’accessibilité. J'ai travaillé sur l’adaptabilité du site pour les versions desktop, tablette et mobile, en m'assurant que la mise en page corresponde fidèlement aux maquettes."
+  },
+  {
+    "title": "Sophie Bluel",
+    "image": "/sophiebluel_background.webp",
+    "github": "https://github.com/KixBo/SophieBluel",
+    "technologies": ["Javascript"],
+    "images": [
+      "/sophiebluel_screen1.webp",
+      "/sophiebluel_screen2.webp",
+      "/sophiebluel_screen3.webp",
+      "/sophiebluel_screen4.webp"
+    ],
+    "description": "Créez une page web dynamique avec JavaScript",
+    "overview": "Dans le cadre de ce projet, j’ai rejoint une équipe de développement pour travailler sur la conception du portfolio de l’architecte d’intérieur Sophie Bluel. L’objectif était de rendre le site interactif en connectant le front-end à une API afin d’afficher dynamiquement les projets et d’offrir une interface d’administration permettant leur gestion.",
+    "achievement": "J’ai été amené à développer l’affichage dynamique des travaux de l’architecte en récupérant les données du back-end et en mettant en place un système de filtrage par catégories. J’ai également conçu la page de connexion permettant à l’administrateur du site d’accéder à une interface de gestion sécurisée. L’authentification a été mise en place grâce à un système de token pour garantir la sécurité des actions d’administration."
   }
 ]
